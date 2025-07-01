@@ -1,0 +1,42 @@
+[
+    {
+        "title": "How to Use lxml for Web Scraping",
+        "href": "https://brightdata.com/blog/web-data/lxml-web-scraping"
+    },
+    {
+        "title": "Using Docker Init in Python",
+        "href": "https://earthly.dev/blog/docker-init-in-python/"
+    },
+    {
+        "title": "Python Web Scraping with Beautiful Soup and Selenium",
+        "href": "https://earthly.dev/blog/python-web-scraping/"
+    },
+    {
+        "title": "How to build API integrations in Python",
+        "href": "https://www.merge.dev/blog/api-integration-python"
+    },
+    {
+        "title": "Automating Infrastructure with Terraform Functions: Best Practices and Examples",
+        "href": "https://earthly.dev/blog/terraform-functions/"
+    },
+    {
+        "title": "Web Crawling with Python",
+        "href": "https://brightdata.com/blog/how-tos/web-crawling-with-python"
+    },
+    {
+        "title": "Kubernetes Monitoring Guide Using Liveness Probe",
+        "href": "https://birdeatsbug.com/blog/kubernetes-monitoring-guide-using-liveness-probe"
+    },
+    {
+        "title": "Step-by-step guide to use GraphQL with Django",
+        "href": "https://birdeatsbug.com/blog/step-by-step-guide-to-use-graphql-with-django"
+    },
+    {
+        "title": "How to Work with Unicode in Python",
+        "href": "https://www.digitalocean.com/community/tutorials/how-to-work-with-unicode-in-python"
+    },
+    {
+        "title": "A Developer's Guide to Kubernetes Services",
+        "href": "https://earthly.dev/blog/kubernetes-services/"
+    }
+]
