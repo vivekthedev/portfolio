@@ -1,8 +1,10 @@
 ---
 company: "Neolen IT Services"
-role: "Software Engineer (Intern)"
-dateStart: 08/01/2023"
-dateEnd: "11/01/2023"
+role: "Software Developer Intern"
+dateStart: 09/01/2023
+dateEnd: 11/01/2023
 ---
 
-Built RAG systems and improved the bot's accuracy by more than 80%. I was also involved with automating internal workflows of the company.
+- Automated 80% of customer support workflows by integrating **LangChain** and **OpenAI Function Calling** into the existing ticketing system.
+- Reduced manual research time by **80%** for Ideal Customer Profile (ICP) creation by building automated AI marketing agents.
+- Collaborated with the product team to deploy AI-assisted workflows, improving internal operational efficiency.

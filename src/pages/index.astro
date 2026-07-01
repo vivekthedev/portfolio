@@ -5,7 +5,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
-import { SITE, HOME, SOCIALS } from "@consts";
+import { SITE, HOME, SOCIALS, SKILLS, EDUCATION, ACHIEVEMENTS } from "@consts";
 
 const blog = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -39,14 +39,27 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I'm a Python and Software developer with a keen interest in building practical, user-focused solutions. I enjoy exploring new tools, frameworks, and technologies, and I'm always looking for ways to improve my skills and contribute to meaningful projects. This portfolio showcases some of my personal projects, experiments, and learnings as I grow in this ever-evolving tech space.
+            I'm a backend developer focused on AI systems, distributed architectures, and production-grade APIs. I build RAG pipelines, event-driven backends, and serverless applications — currently at Prysm Finance working on semantic search and real-time alert systems.
           </p>
           <p class="animate">
-            I believe in writing clean, maintainable code and learning from real-world problems. When I'm not coding, I'm usually reading about technology trends or experimenting with new ideas.
-
+            I enjoy turning complex problems into reliable, scalable systems. When I'm not shipping code, I'm writing technical articles or solving algorithm problems on LeetCode.
           </p>
       
         </article>
+      </section>
+
+      <section class="animate space-y-4">
+        <h5 class="font-semibold text-black dark:text-white">
+          Technical Skills
+        </h5>
+        <dl class="space-y-2 text-sm">
+          {SKILLS.map(({ category, items }) => (
+            <div class="flex flex-wrap gap-x-2">
+              <dt class="font-medium text-black dark:text-white">{category}</dt>
+              <dd class="opacity-75">{items}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
       <section class="animate space-y-6">
@@ -110,6 +123,37 @@ const work = await Promise.all(
             <li>
               <ArrowCard entry={project} />
             </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="animate space-y-4">
+        <h5 class="font-semibold text-black dark:text-white">
+          Education
+        </h5>
+        <ul class="space-y-4">
+          {EDUCATION.map(entry => (
+            <li>
+              <div class="flex flex-wrap justify-between gap-x-4">
+                <div class="font-semibold text-black dark:text-white">{entry.school}</div>
+                <div class="text-sm opacity-75">{entry.period}</div>
+              </div>
+              <div class="text-sm opacity-75">{entry.degree}</div>
+              {entry.focus && (
+                <div class="text-sm opacity-75 italic">Focus: {entry.focus}</div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="animate space-y-4">
+        <h5 class="font-semibold text-black dark:text-white">
+          Publications & Achievements
+        </h5>
+        <ul class="list-disc list-inside space-y-2 text-sm opacity-90">
+          {ACHIEVEMENTS.map(item => (
+            <li>{item}</li>
           ))}
         </ul>
       </section>
